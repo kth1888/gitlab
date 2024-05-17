@@ -1,0 +1,24 @@
+{
+    "folders": [
+        {
+            "name": "Root",
+            "path": "../"
+        },
+        {
+            "name": "Backend APP",
+            "path": "../backend/app",
+        }
+    ],
+    "extensions": {
+        "recommendations": [
+            "editorconfig.editorconfig",
+            "formulahendry.dotnet-test-explorer",
+            "ms-dotnettools.csharp",
+            "ms-dotnettools.csdevkit"
+        ]
+    },
+    "settings": {
+        "dotnet-test-explorer.testProjectPath": "**/*Tests.@(csproj|vbproj|fsproj)",
+        "dotnet.defaultSolution": "Backend APP/Savor22b.sln"
+    }
+}
