@@ -25,7 +25,11 @@ jobs:
           lfs: true
           submodules: recursive
           fetch-depth: 1
-          
+
+      - name: Add safe.directory configuration
+        run: |
+          git config --global --add safe.directory /__w/${{ github.repository }}
+
       - name: Initialize submodules
         run: |
           git submodule sync
