@@ -36,7 +36,11 @@ jobs:
         run: |
           git submodule sync
           git submodule update --init --recursive
-
+          
+      - name: List directory structure for debugging
+        run: |
+          echo "Listing project directory structure for debugging:"
+          ls -R
 
       - name: Setup
         run: |
