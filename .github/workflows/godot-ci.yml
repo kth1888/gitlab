@@ -28,7 +28,9 @@ jobs:
 
       - name: Add safe.directory configuration
         run: |
-          git config --global --add safe.directory /__w/${{ github.repository }}
+          REPO_PATH=$(pwd)
+          echo "Repository path is $REPO_PATH"
+          git config --global --add safe.directory $REPO_PATH
 
       - name: Initialize submodules
         run: |
